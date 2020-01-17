@@ -14,7 +14,7 @@ const IndexPage = () => (
     AADHUM Content!
     <Carousel showArrows={true} autoPlay showThumbs={false}
      stopOnHover infiniteLoop showStatus={false} dynamicHeight
-     transitionTime={0} onChange={onChangeHandler}>
+     transitionTime={0}>
       <div>
         <img src="https://mith.umd.edu/aadhum/wp-content/uploads/sites/5/2017/02/race-space-place_events_rg.jpg"/>
         <div className="slideTitle">
