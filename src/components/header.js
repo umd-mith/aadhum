@@ -2,8 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import style from './header.module.css'
+
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className={style.Header}>
     AADHUM
   </header>
 )
