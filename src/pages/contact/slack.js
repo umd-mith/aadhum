@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const SlackPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="AADHum Online (Slack)" />
     AADHUM Content!
   </Layout>
 )
 
-export default IndexPage
+export default SlackPage
