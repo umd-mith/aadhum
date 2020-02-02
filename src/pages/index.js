@@ -6,23 +6,34 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "react-responsive-carousel/lib/styles/carousel.css"
-import "./home.css"
+import "./index.css"
+import IncubatorGroup from '../images/incubator-group.jpg'
+import RaceSpacePlace from '../images/race-space-place.jpg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     AADHUM Content!
-    <Carousel showArrows={true} autoPlay showThumbs={false}
-     stopOnHover infiniteLoop showStatus={false} dynamicHeight
-     transitionTime={0}>
+    <Carousel 
+      showArrows={true} 
+      autoPlay={true}
+      showThumbs={false}
+      stopOnHover={true}
+      infiniteLoop={true}
+      showStatus={false}
+      dynamicHeight={true}
+      transitionTime={0}>
       <div>
-        <img src="https://mith.umd.edu/aadhum/wp-content/uploads/sites/5/2017/02/race-space-place_events_rg.jpg"/>
+        <img src={RaceSpacePlace} />
         <div className="slideTitle">
           2019–2020 AADHum Scholars Program
         </div>
       </div>
       <div>
-        <img src="https://mith.umd.edu/aadhum/wp-content/uploads/sites/5/2017/02/slide_incubator-group-2.jpg"/>
+        <img src={IncubatorGroup} />
+        <div className="slideTitle">
+          Incubator group.
+        </div>
       </div>
     </Carousel>
   </Layout>
