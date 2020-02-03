@@ -3,6 +3,10 @@ nav {
   flex-direction: row;
 }
 
+nav #icon {
+  display: none;
+}
+
 nav .menu-list {
   margin-right: 40px;
 }
@@ -19,7 +23,7 @@ nav .menu-name:hover {
 nav ul.links {
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   margin-top: 0px;
   margin-left: -5px;
   position: fixed;
@@ -42,4 +46,21 @@ nav a.active {
 
 nav a:hover {
   color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  nav div {
+    display: block;
+  }
+  nav ul.links {
+    display: block;
+    position: relative;
+  }
+  nav #icon {
+    display: inline; 
+    font-size: 18pt;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
