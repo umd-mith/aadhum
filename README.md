@@ -1,6 +1,6 @@
 # AADHum
 
-This repository contains a Gatsby site for the AADHum Project hosted at the Maryland Institute for Technology in the Humanities.
+This repository contains a [Gatsby] site for the AADHum Project hosted at the Maryland Institute for Technology in the Humanities.
 
 ## Develop
 
@@ -20,6 +20,7 @@ https://elegant-albattani-cfb390.netlify.com/values/vision/
 
 When you push changes to GitHub Netlify will automatically deploy the site.
 
+[Gatsby]: https://www.gatsbyjs.org
 [Node]: https://nodejs.org
 [Git]: https://git-scm.org
 [Netlify]: https://www.netlify.com/
