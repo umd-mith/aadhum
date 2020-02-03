@@ -10,25 +10,45 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import NavBar from "./navbar"
 import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          menuLinks {
+            name
+            links {
+              name
+              href
+            }
+          }
         }
       }
     }
   `)
 
+  // look for a page title in menu data
+  if (!title && typeof window !== `undefined`) {
+    for (const menuList of data.site.siteMetadata.menuLinks) {
+      for (const menuItem of menuList.links) {
+        if (window.location.pathname == menuItem.href) {
+          title = menuItem.name
+        }
+      }
+    }
+  }
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <NavBar />
+      <Header
+        title={title} 
+        menuLinks={data.site.siteMetadata.menuLinks}
+        siteTitle={data.site.siteMetadata.title} />
+      <hr />
       <main>{children}</main>
       <Footer />
     </>

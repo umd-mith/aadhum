@@ -1,4 +1,21 @@
-.Header {
+header {
   width: 100%;
-  font-size: 30pt;
+  margin-bottom: 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a {
+  color: black;
+}
+
+header h1 {
+  margin-bottom: 0px;
+}
+
+header h1 .page-title {
+  font-size: smaller;
+  margin-left: 10px;
 }

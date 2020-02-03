@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .menu-list {
+  background-color: white;
+  margin-right: 40px;
+}
+
+nav .menu-name {
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+nav ul.links {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
+  position: fixed;
+  z-index: 1; 
+  background-color: white;
+  border-bottom: thin dashed #ccc;
+  border-right: thin dashed #ccc;
+  border-left: thin dashed #ccc;
+}
+
+nav li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: purple;
+}

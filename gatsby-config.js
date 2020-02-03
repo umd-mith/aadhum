@@ -1,8 +1,99 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `AADHUM`,
+    description: `African American History, Culture and Digital Humanities`,
+    author: `MITH`,
+    menuLinks: [
+      {
+        name: 'Our Values',
+        links: [
+          {
+            name: 'Code of Conduct',
+            href: '/values/conduct/'
+          },
+          {
+            name: 'Vision',
+            href: '/values/vision/'
+          }
+        ]
+      },
+      {
+        name: 'Research',
+        links: [
+          {
+            name: 'Restorative Justice Project',
+            href: '/research/restorative-justice/'
+          },
+          {
+            name: 'Black DH Practices',
+            href: '/research/black-dh/'
+          }
+        ]
+      },
+      {
+        name: 'Programs + Events',
+        links: [
+          {
+            name: 'AADHUM Scholars',
+            href: '/programs/scholars/'
+          },
+          {
+            name: 'Seminars and Workshops',
+            href: '/programs/seminars/'
+          },
+          {
+            name: 'Open Studios',
+            href: '/programs/open-studio/'
+          },
+          {
+            name: 'Summer Research',
+            href: '/programs/summer-research/'
+          },
+          {
+            name: 'Elevate Fellowship',
+            href: '/programs/elevate/' 
+          },
+          {
+            name: 'Conference',
+            href: '/programs/conference/'
+          }
+        ]
+      },
+      {
+        name: `News`,
+        links: [
+          {
+            name: 'Blog',
+            href: '/news/blog/'
+          },
+          {
+            name: 'Bulletins',
+            href: '/news/bulletins/'
+          }
+        ]
+      },
+      {
+        name: `Contact`,
+        links: [
+          {
+            name: 'AADHum Online',
+            href: '/contact/aadhum-online/'
+          },
+          {
+            name: 'Social',
+            href: '/contact/social/'
+          },
+          {
+            name: 'Email',
+            href: '/contact/email/'
+          },
+          {
+            name: 'Mailing List',
+            href: '/contact/mailing-list/'
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
