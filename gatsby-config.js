@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `AADHUM`,
+    title: `AADHum`,
     description: `African American History, Culture and Digital Humanities`,
     author: `MITH`,
     menuLinks: [

@@ -36,7 +36,7 @@ const Layout = ({ children, title }) => {
     for (const menuList of data.site.siteMetadata.menuLinks) {
       for (const menuItem of menuList.links) {
         if (window.location.pathname == menuItem.href) {
-          title = menuItem.name
+          title = ` // ${menuItem.name}`
         }
       }
     }
@@ -48,7 +48,6 @@ const Layout = ({ children, title }) => {
         title={title} 
         menuLinks={data.site.siteMetadata.menuLinks}
         siteTitle={data.site.siteMetadata.title} />
-      <hr />
       <main>{children}</main>
       <Footer />
     </>

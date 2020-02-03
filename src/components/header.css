@@ -8,11 +8,11 @@ header a {
 }
 
 header a {
-  color: black;
+  color: white;
 }
 
 header h1 {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 header h1 .page-title {

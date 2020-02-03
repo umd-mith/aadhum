@@ -4,7 +4,6 @@ nav {
 }
 
 nav .menu-list {
-  background-color: white;
   margin-right: 40px;
 }
 
@@ -13,17 +12,19 @@ nav .menu-name {
   cursor: pointer;
 }
 
+nav .menu-name:hover {
+  color: yellow;
+}
+
 nav ul.links {
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 5px;
-  margin: 0px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+  margin-left: -5px;
   position: fixed;
   z-index: 1; 
-  background-color: white;
-  border-bottom: thin dashed #ccc;
-  border-right: thin dashed #ccc;
-  border-left: thin dashed #ccc;
+  background-color: black;
 }
 
 nav li {
@@ -33,7 +34,6 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: black;
 }
 
 nav a.active {
@@ -41,5 +41,5 @@ nav a.active {
 }
 
 nav a:hover {
-  color: purple;
+  color: yellow;
 }
