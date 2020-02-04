@@ -35,7 +35,7 @@ const Layout = ({ children, title }) => {
   if (!title && typeof window !== `undefined`) {
     for (const menuList of data.site.siteMetadata.menuLinks) {
       for (const menuItem of menuList.links) {
-        if (window.location.pathname == menuItem.href) {
+        if (window.location.pathname === menuItem.href) {
           title = menuItem.name
         }
       }
