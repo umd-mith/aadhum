@@ -7,6 +7,11 @@ nav .menu-list {
 
 nav .menu-name {
   text-decoration: underline;
+  font-size: 12pt;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0px;
 }
 
 nav .links {
@@ -51,7 +56,6 @@ nav a:hover {
 
   nav .menu-name {
     display: block;
-    font-size: 16pt;
     cursor: pointer;
     text-decoration: none;
   }

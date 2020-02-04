@@ -7,7 +7,7 @@ const NavBar = ({ menuLinks }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <nav>
-      <a className="icon" href="#" onClick={() => setMenuOpen(!menuOpen)}> Menu &#9776;</a>
+      <button className="icon" href="#" onClick={() => setMenuOpen(!menuOpen)}> Menu &#9776;</button>
       {menuLinks.map(cat => {
         return (
           <MenuList key={cat.name} name={cat.name} links={cat.links} menuOpen={menuOpen} />
@@ -20,21 +20,19 @@ const NavBar = ({ menuLinks }) => {
 const MenuList = ({ name, links, menuOpen }) => {
   const [linksActive, setLinksActive] = useState(false)
 
-  // let nameOpen = ''
-  // let linksOpen = ''
-
   let open = ''
-
   if (menuOpen || linksActive) {
     open = 'open'
   }
 
   return (
     <div
+      role="menu"
+      tabIndex="-1"
       className={`menu-list ${open}`}
       onMouseEnter={() => setLinksActive(true)}
       onMouseLeave={() => setLinksActive(false)}>
-      <span className={`menu-name ${open}`}>{name}</span>
+      <button onClick={() => setLinksActive(!linksActive)} className={`menu-name ${open}`}>{name}</button>
       <ul className={`links ${open}`}>
         {links.map(link => (
           <li key={link.name}>
