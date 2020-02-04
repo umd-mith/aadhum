@@ -1,6 +1,15 @@
+/* No footer on mobile */
+
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
