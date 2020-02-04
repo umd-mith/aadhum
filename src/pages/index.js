@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import {Carousel} from "react-responsive-carousel"
 import Layout from "../components/layout"
 
@@ -21,13 +20,13 @@ const IndexPage = () => (
       dynamicHeight={true}
       transitionTime={0}>
       <div>
-        <img src={RaceSpacePlace} />
+        <img alt="AADHum Scholars Program" src={RaceSpacePlace} />
         <div className="slideTitle">
           2019–2020 AADHum Scholars Program
         </div>
       </div>
       <div>
-        <img src={IncubatorGroup} />
+        <img alt="Incubator Group" src={IncubatorGroup} />
         <div className="slideTitle">
           Incubator group.
         </div>
