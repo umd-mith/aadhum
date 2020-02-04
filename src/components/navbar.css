@@ -1,3 +1,5 @@
+/* mobile first nav bar */
+
 nav .menu-list {
   display: none;
   margin-top: 5px;
@@ -17,7 +19,7 @@ nav .menu-list li {
   list-style-type: none;
 }
 
-nav .menu-list.active {
+nav .menu-list.open {
   display: block;
 }
 
@@ -63,9 +65,7 @@ nav a:hover {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    border-bottom: thin dashed #ccc;
-    border-left: thin dashed #ccc;
-    border-right: thin dashed #ccc;
+    border-bottom: thin inset #ccc;
     margin-top: 0px;
     margin-left: -10px;
     position: fixed;
@@ -73,7 +73,7 @@ nav a:hover {
     background-color: black;
   }
 
-  nav .links.active {
+  nav .links.open {
     display: block;
   }
 

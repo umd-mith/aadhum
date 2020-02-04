@@ -20,25 +20,22 @@ const NavBar = ({ menuLinks }) => {
 const MenuList = ({ name, links, menuOpen }) => {
   const [linksActive, setLinksActive] = useState(false)
 
-  let nameOpen = ''
-  let linksOpen = ''
+  // let nameOpen = ''
+  // let linksOpen = ''
 
-  if (menuOpen) {
-    nameOpen = 'active'
-    linksOpen = 'active'
-  }
+  let open = ''
 
-  if (linksActive) {
-    linksOpen = 'active'
+  if (menuOpen || linksActive) {
+    open = 'open'
   }
 
   return (
     <div
-      className={`menu-list ${nameOpen}`}
+      className={`menu-list ${open}`}
       onMouseEnter={() => setLinksActive(true)}
       onMouseLeave={() => setLinksActive(false)}>
-      <span className={`menu-name ${nameOpen}`}>{name}</span>
-      <ul className={`links ${linksOpen}`}>
+      <span className={`menu-name ${open}`}>{name}</span>
+      <ul className={`links ${open}`}>
         {links.map(link => (
           <li key={link.name}>
             <Link to={link.href} activeClassName="active">
