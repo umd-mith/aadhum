@@ -1,66 +1,80 @@
-nav {
-  display: flex;
-  flex-direction: row;
-}
-
-nav #icon {
-  display: none;
-}
-
 nav .menu-list {
-  margin-right: 40px;
+  display: none;
+  margin-top: 5px;
 }
 
 nav .menu-name {
-  font-size: 16pt;
-  cursor: pointer;
+  text-decoration: underline;
 }
 
-nav .menu-name:hover {
-  color: yellow;
-}
-
-nav ul.links {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
+nav .links {
+  padding: 0px;
   margin-top: 0px;
-  margin-left: -5px;
-  position: fixed;
-  z-index: 1; 
-  background-color: black;
+  margin-bottom: 0px;
 }
 
-nav li {
+nav .menu-list li {
   list-style-type: none;
-  cursor: pointer;
 }
 
-nav a {
-  text-decoration: none;
+nav .menu-list.active {
+  display: block;
 }
 
 nav a.active {
-  font-weight: bold;
+  color: yellow;
 }
 
 nav a:hover {
   color: yellow;
 }
 
-@media screen and (max-width: 600px) {
-  nav div {
-    display: block;
-  }
-  nav ul.links {
-    display: block;
-    position: relative;
-  }
-  nav #icon {
-    display: inline; 
-    font-size: 18pt;
-  }
+/* Large screens get a horizontal menu with names showing */
+
+@media screen and (min-width: 600px) {
+
   nav {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
+
+  nav .icon {
+    display: none;
+  }
+
+  nav .menu-list {
+    display: block;
+    margin-right: 40px;
+  }
+
+  nav .menu-name {
+    display: block;
+    font-size: 16pt;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  nav .menu-name:hover {
+    color: yellow;
+  }
+
+  nav .links {
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: thin dashed #ccc;
+    border-left: thin dashed #ccc;
+    border-right: thin dashed #ccc;
+    margin-top: 0px;
+    margin-left: -10px;
+    position: fixed;
+    z-index: 1; 
+    background-color: black;
+  }
+
+  nav .links.active {
+    display: block;
+  }
+
 }
