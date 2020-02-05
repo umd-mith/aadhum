@@ -16,7 +16,7 @@ You will need to install [Node] and [Git] before you can develop the AADHum webs
 
 The site is hosted on [Netlify] currently at:
 
-https://elegant-albattani-cfb390.netlify.com/values/vision/
+https://elegant-albattani-cfb390.netlify.com/
 
 When you push changes to GitHub Netlify will automatically deploy the site.
 
