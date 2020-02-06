@@ -1,12 +1,16 @@
 ---
 title: "Taking Care: The Question of AR, VR, and Blackness"
 date: "2019-07-08"
+author: 
+ - name: Kimberly Bain
+   affiliation: Princeton University
 description: ""
-- archives
-- augmented reality
-- black studies
-- virtual reality
-- AADHum Scholars
+tags:
+  - archives
+  - augmented reality
+  - black studies
+  - virtual reality
+  - AADHum Scholars
 ---
 
 _I can’t breathe_. At once: the wheezing out of a severely singular experience. Yet and also: a hailing of the social, political, economic, and environmental phenomena surrounding Eric Garner’s loss of breath.
