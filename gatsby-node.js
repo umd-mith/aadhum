@@ -2,8 +2,33 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  await createBlogPosts(graphql, actions)
+}
 
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark` && node.frontmatter.date) {
+
+    const slug = createFilePath({ node, getNode })
+    createNodeField({
+      node: node,
+      name: `slug`,
+      value: slug
+    })
+
+    const url = dateUrl(node)
+    createNodeField({
+      node: node,
+      name: `urlPath`,
+      value: url
+    })
+
+  }
+}
+
+async function createBlogPosts(graphql, actions) {
+  const { createPage } = actions
   const blogPost = path.resolve(`./src/templates/post.js`)
   const result = await graphql(
     `
@@ -16,9 +41,11 @@ exports.createPages = async ({ graphql, actions }) => {
             node {
               fields {
                 slug
+                urlPath
               }
               frontmatter {
                 title
+                date
               }
             }
           }
@@ -39,7 +66,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const next = index === 0 ? null : posts[index - 1].node
 
     createPage({
-      path: `news/blog${post.node.fields.slug}`,
+      path: post.node.fields.urlPath,
       component: blogPost,
       context: {
         slug: post.node.fields.slug,
@@ -50,15 +77,10 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
+function dateUrl(node) {
+  const date = new Date(node.frontmatter.date)
+  const year = date.getFullYear().toString()
+  let month = (date.getMonth() + 1).toString()
+  if (month.length == 1) month = `0${month}`
+  return `${year}/${month}${node.fields.slug}`
 }

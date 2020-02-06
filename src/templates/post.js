@@ -8,8 +8,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
-  const blogRoot = location.pathname.replace(data.markdownRemark.fields.slug, '') + "/"
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -40,14 +38,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={`${blogRoot}${previous.fields.slug}`} rel="prev">
+              <Link to={previous.fields.urlPath} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`${blogRoot}${next.fields.slug}`} rel="next">
+              <Link to={next.fields.urlPath} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}

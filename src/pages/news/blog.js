@@ -38,7 +38,7 @@ const BlogPage = ({data, location}) => {
                 }}
               />
             </section>
-            <Link to={`${location.pathname}${node.fields.slug}`}>Read more</Link>
+            <Link to={node.fields.urlPath}>Read more</Link>
           </article>
         )
       })}
@@ -64,6 +64,7 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            urlPath
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

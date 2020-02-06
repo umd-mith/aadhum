@@ -9,3 +9,12 @@ main {
   height: 100%;
   margin-top: 20px;
 }
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: yellow;
+}
