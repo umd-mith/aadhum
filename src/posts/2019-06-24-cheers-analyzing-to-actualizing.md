@@ -1,21 +1,20 @@
 ---
-title: "From Analyzing to Actualizing Apartheid: A Journey in Realization"
-date: "2019-06-24"
-description: ""
-authors: 
-    - name: Dr Imani M. Cheers
-      affiliation: George Washington University
+title: 'From Analyzing to Actualizing Apartheid: A Journey in Realization'
+date: '2019-06-24'
+description: Test
 tags:
-- AADHum Scholars
-- apartheid
-- documentary film
-- photovoice
-- virtual reality
+  - AADHum Scholars
+  - apartheid
+  - documentary film
+  - photovoice
+  - virtual reality
+authors:
+  - affiliation: George Washington University
+    name: Dr Imani M. Cheers
 ---
+Test. As an educator, scholar, journalist and filmmaker, my work has sat at the intersection of black digital humanities and creative scholarship for the last decade. A TV nerd, I spent the first half of my career examining the representation of black women in television. I was consumed by depictions of black women on the small screen and how those images impacted the lives of viewers.
 
-As an educator, scholar, journalist and filmmaker, my work has sat at the intersection of black digital humanities and creative scholarship for the last decade. A TV nerd, I spent the first half of my career examining the representation of black women in television. I was consumed by depictions of black women on the small screen and how those images impacted the lives of viewers.
-
-One of my favorite shows, _A Different World_, has a second season episode that explores the anti-Apartheid movement in South Africa. Titled “[A World Alike](https://www.imdb.com/title/tt0560112/),” the episode aired on February 15, 1990, four days after liberation icon, Nelson Mandela was released from Robben Island prison. As a photojournalist for _Ebony Magazine_, my father was in the crowd that historic day; at 10 years old I vividly understood the importance of not only Mandela’s release from 27 years of bondage, but also of _A Different World_’s depiction of black diasporic solidarity with the boycotts, divestment, sanctions, and non-violent protests against Apartheid.
+One of my favorite shows, *A Different World*, has a second season episode that explores the anti-Apartheid movement in South Africa. Titled “[A World Alike](https://www.imdb.com/title/tt0560112/),” the episode aired on February 15, 1990, four days after liberation icon, Nelson Mandela was released from Robben Island prison. As a photojournalist for *Ebony Magazine*, my father was in the crowd that historic day; at 10 years old I vividly understood the importance of not only Mandela’s release from 27 years of bondage, but also of *A Different World*’s depiction of black diasporic solidarity with the boycotts, divestment, sanctions, and non-violent protests against Apartheid.
 
 A July 2018 humanitarian trip to Palestine, left me inspired by the region’s anti-Apartheid and occupation liberation movement and comparisons to similar struggles plaguing South Africa and Namibia—specifically, by the current land rights’ reform and water restrictions plaguing all three countries. As I draw comparisons that link these oppressive regimes to their military, economic and political support by the U.S. government, I’m outraged and empowered. Being a 2019 [AADHum Scholar](https://aadhum.umd.edu/scholars/) gave me time to both process my experiences in all three regions and to outline my current research project.
 
