@@ -2,7 +2,7 @@
 title: "From Analyzing to Actualizing Apartheid: A Journey in Realization"
 date: "2019-06-24"
 description: ""
-author: 
+authors: 
     - name: Dr Imani M. Cheers
       affiliation: George Washington University
 tags:

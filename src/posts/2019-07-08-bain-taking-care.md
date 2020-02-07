@@ -1,7 +1,7 @@
 ---
 title: "Taking Care: The Question of AR, VR, and Blackness"
 date: "2019-07-08"
-author: 
+authors: 
  - name: Kimberly Bain
    affiliation: Princeton University
 description: ""
