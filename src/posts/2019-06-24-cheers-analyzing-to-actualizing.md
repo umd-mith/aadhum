@@ -11,6 +11,8 @@ tags:
 authors:
   - affiliation: George Washington University
     name: Dr Imani M. Cheers
+  - affiliation: The Matrix
+    name: Dr Smith
 ---
 Test. As an educator, scholar, journalist and filmmaker, my work has sat at the intersection of black digital humanities and creative scholarship for the last decade. A TV nerd, I spent the first half of my career examining the representation of black women in television. I was consumed by depictions of black women on the small screen and how those images impacted the lives of viewers.
 
