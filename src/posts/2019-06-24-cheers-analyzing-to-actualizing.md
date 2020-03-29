@@ -1,5 +1,5 @@
 ---
-title: 'From Analyzing to Actualizing Apartheid: A Journey in Realization (a test)'
+title: 'From Analyzing to Actualizing Apartheid: A Journey in Realization'
 date: '2019-06-24'
 description: Test
 tags:
